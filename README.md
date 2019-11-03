@@ -18,5 +18,4 @@ Kick off your project with this awesome boilerplate. Includes:
 
 ```
 gatsby new gatsby-strapi-website https://github.com/jeremylynch/gatsby-strapi-starter
-
 ```
