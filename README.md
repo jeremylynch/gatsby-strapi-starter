@@ -8,7 +8,7 @@
   Gatsby's Strapi Starter
 </h1>
 
-A (slightly) opinionated Gatsby Strapi boilerplate to get started fast.Stack includes:
+A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack includes:
 * [Strapi](https://strapi.io/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Reactstrap](https://reactstrap.github.io/)
@@ -16,6 +16,9 @@ A (slightly) opinionated Gatsby Strapi boilerplate to get started fast.Stack inc
 * [React Icons](https://github.com/react-icons/react-icons)
 * [Google Tag Manager](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-tagmanager)
 * [gatsby-plugin-netlify](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify)
+* [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.org/packages/gatsby-plugin-google-tagmanager/)
+* [gatsby-plugin-facebook-pixel](https://www.gatsbyjs.org/packages/gatsby-plugin-facebook-pixel)
+* [gatsby-plugin-favicon](https://github.com/Creatiwity/gatsby-plugin-favicon)
 
 [View Demo] (https://gatsby-strapi-starter.netlify.com/)
 

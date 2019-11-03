@@ -1,3 +1,6 @@
+let facebook_pixel = ''
+let gtm = ''
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Bootstrap Strapi Starter`,
@@ -17,24 +20,24 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: '',
+        id: gtm,
         includeInDevelopment: false
+      }
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: facebook_pixel,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/images/gatsby-icon.png'
       }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
