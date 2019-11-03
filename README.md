@@ -8,12 +8,14 @@
   Gatsby's Strapi Starter
 </h1>
 
-Kick off your project with this awesome boilerplate. Includes:
+A (slightly) opinionated Gatsby Strapi boilerplate to get started fast.Stack includes:
 * [Strapi](https://strapi.io/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Reactstrap](https://reactstrap.github.io/)
 * [Reactstrap-form-fields](https://github.com/jeremylynch/reactstrap-form-fields)
 * [React Icons](https://github.com/react-icons/react-icons)
+* [Google Tag Manager](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-tagmanager)
+* [gatsby-plugin-netlify](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify)
 
 [View Demo] (https://gatsby-strapi-starter.netlify.com/)
 

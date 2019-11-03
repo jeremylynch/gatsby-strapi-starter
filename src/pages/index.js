@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Button } from 'reactstrap'
+import { Container } from 'reactstrap'
 import Link from '../components/link'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
