@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { Container } from 'reactstrap'
 import Layout from "../components/layout"
@@ -10,7 +9,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="slider">
       <Container>
-        <h1 className="text-center">Bootstrap + Strapi Demo</h1>
+        <div className="text-center">
+          <h1>Bootstrap + Strapi + Gatsby Starter</h1>
+          <p>By Jeremy Lynch</p>
+        </div>
       </Container>
     </div>
   </Layout>
