@@ -14,6 +14,8 @@ Kick off your project with this awesome boilerplate. Includes:
 * [Reactstrap](https://reactstrap.github.io/)
 * [Reactstrap-form-fields](https://github.com/jeremylynch/reactstrap-form-fields)
 
+[View Demo] (https://gatsby-strapi-starter.netlify.com/)
+
 ## 🚀 Quick start
 
 ```
