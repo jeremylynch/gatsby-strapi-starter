@@ -21,6 +21,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
     "reactstrap": "^8.1.1"
   },
   "devDependencies": {

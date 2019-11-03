@@ -13,6 +13,7 @@ Kick off your project with this awesome boilerplate. Includes:
 * [Bootstrap](https://getbootstrap.com/)
 * [Reactstrap](https://reactstrap.github.io/)
 * [Reactstrap-form-fields](https://github.com/jeremylynch/reactstrap-form-fields)
+* [React Icons](https://github.com/react-icons/react-icons)
 
 [View Demo] (https://gatsby-strapi-starter.netlify.com/)
 

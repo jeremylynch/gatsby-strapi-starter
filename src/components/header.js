@@ -21,7 +21,7 @@ const Header = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">{props.siteTitle}</NavbarBrand>
+        <Link to="/" className="navbar-brand">{props.siteTitle}</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

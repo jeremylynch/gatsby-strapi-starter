@@ -1,12 +1,35 @@
 import React from 'react'
-import {Container} from 'reactstrap'
+import {Container, Row, Col} from 'reactstrap'
 
 export default () => (
-  <footer className="py-3">
+  <footer className="py-5 bg-light">
     <Container>
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <Row>
+        <Col>
+          <h5>Features</h5>
+          <ul>
+            <li>Item</li>
+          </ul>
+        </Col>
+        <Col>
+          <h5>Resources</h5>
+          <ul>
+            <li>Item</li>
+          </ul>
+        </Col>
+        <Col>
+          <h5>Company</h5>
+          <ul>
+            <li>Item</li>
+          </ul>
+        </Col>
+        <Col>
+          <h5>Contact Us</h5>
+          <ul>
+            <li>Item</li>
+          </ul>
+        </Col>
+      </Row>
     </Container>
   </footer>
 )
