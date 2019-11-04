@@ -28,9 +28,11 @@
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
+    "react-slick": "^0.25.2",
     "reactstrap": "^8.1.1",
     "reactstrap-form-fields": "^1.0.4",
-    "reactstrap-json-nav": "^1.0.1"
+    "reactstrap-json-nav": "^1.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
