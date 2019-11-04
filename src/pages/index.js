@@ -24,6 +24,7 @@ export default () => (
       <Container>
         <Row className="d-flex justify-content-center">
           <Col md={8}>
+            <h3 className="text-center">Reactstrap Form Fields</h3>
             <Form/>
           </Col>
         </Row>
