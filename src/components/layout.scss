@@ -1,4 +1,38 @@
+// Bootstrap Custom Variables here
+
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+
+/// Typography
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/HKGrotesk-Bold.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/HKGrotesk-ExtraBold.woff2') format("woff2");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-family: 'HKGrotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "HKGrotesk";
+  font-weight: 500
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
 
 .slider {
   background: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
