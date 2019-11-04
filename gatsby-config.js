@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './src/images/gatsby-icon.png'
+        logo: './src/assets/images/gatsby-icon.png'
       }
     },
     `gatsby-transformer-sharp`,
