@@ -30,7 +30,7 @@
     "react-icons": "^3.8.0",
     "reactstrap": "^8.1.1",
     "reactstrap-form-fields": "^1.0.4",
-    "reactstrap-json-nav": "file:../reactstrap-json-nav"
+    "reactstrap-json-nav": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
