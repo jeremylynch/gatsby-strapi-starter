@@ -44,6 +44,9 @@ p {
 }
 
 footer {
+  a, a:hover {
+    color: inherit;
+  }
   ul {
     -webkit-padding-start: 0;
     padding: 0;

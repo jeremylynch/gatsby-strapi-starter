@@ -15,7 +15,7 @@ export default () => (
       <Slider/>
     </div>
     <div className="text-center py-5">
-      <Link to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary">
+      <Link to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
         <FaGithub className="mr-1"/>
         View on Github
       </Link>
