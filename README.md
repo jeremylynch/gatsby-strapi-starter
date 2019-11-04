@@ -13,6 +13,7 @@ A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack in
 * [Bootstrap](https://getbootstrap.com/)
 * [Reactstrap](https://reactstrap.github.io/)
 * [Reactstrap-form-fields](https://github.com/jeremylynch/reactstrap-form-fields)
+* [Reactstrap-json-nav](https://github.com/jeremylynch/reactstrap-json-nav)
 * [React Icons](https://github.com/react-icons/react-icons)
 * [Google Tag Manager](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-tagmanager)
 * [gatsby-plugin-netlify](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify)

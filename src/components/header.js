@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-import Link from 'gatsby-link'
-import JsonNav from './jsonNav'
+  NavbarToggler
+} from 'reactstrap';
+import Link from './link'
+import Navigation from 'reactstrap-json-nav'
+import navigation from '../data/navigation';
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +18,7 @@ const Header = (props) => {
       <Link to="/" className="navbar-brand">{props.siteTitle}</Link>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-        <JsonNav/>
+        <Navigation json={navigation} link={Link}/>
       </Collapse>
     </Navbar>
   );
