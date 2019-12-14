@@ -7,6 +7,17 @@ import SEO from "../components/seo"
 import { FaGithub } from 'react-icons/fa'
 import Form from '../components/form'
 import Slider from '../components/slider'
+import Box from '../components/box'
+import { FaHome } from 'react-icons/fa';
+
+let Service = ({title, Icon = FaHome}) => (
+  <Col>
+    <Box>
+      <Icon size={30}/>
+      <h4 className="mt-3">{title}</h4>
+    </Box>
+  </Col>
+)
 
 export default () => (
   <Layout>
@@ -14,6 +25,14 @@ export default () => (
     <div className="slider">
       <Slider/>
     </div>
+    <Container className="py-5">
+      <h2 className="text-center mb-4">Services</h2>
+      <Row>
+        <Service title="Websites"/>
+        <Service title="SEO"/>
+        <Service title="API"/>
+      </Row>
+    </Container>
     <div className="text-center py-5">
       <Link to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
         <FaGithub className="mr-1"/>

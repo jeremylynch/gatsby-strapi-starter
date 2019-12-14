@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jeremy Lynch",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
@@ -19,6 +20,7 @@
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "2.2.2",
     "gatsby-plugin-sitemap": "^2.2.19",
+    "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-source-strapi": "0.0.10",
     "gatsby-transformer-sharp": "2.2.2",
@@ -32,7 +34,8 @@
     "reactstrap": "^8.1.1",
     "reactstrap-form-fields": "^1.0.4",
     "reactstrap-json-nav": "^1.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

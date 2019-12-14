@@ -10,33 +10,36 @@ export default () => {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-  const title = useStaticQuery(graphql`
+  const sideMetadata = useStaticQuery(graphql`
     query TitleQuery {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
   `)
+
+  let {title, author} = sideMetadata.site.siteMetadata
   return (
     <Slider {...settings}>
       <div>
         <div className="text-center">
-          <h1>{title.site.siteMetadata.title}</h1>
-          <p>By Jeremy Lynch</p>
+          <h1>{title}</h1>
+          <p>By {author}</p>
         </div>
       </div>
       <div>
         <div className="text-center">
-          <h1>{title.site.siteMetadata.title}</h1>
-          <p>By Jeremy Lynch</p>
+          <h1>{title}</h1>
+          <p>By {author}</p>
         </div>
       </div>
       <div>
         <div className="text-center">
-          <h1>{title.site.siteMetadata.title}</h1>
-          <p>By Jeremy Lynch</p>
+          <h1>{title}</h1>
+          <p>By {author}</p>
         </div>
       </div>
     </Slider>
