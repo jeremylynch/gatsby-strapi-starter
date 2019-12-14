@@ -21,7 +21,7 @@ A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack in
 * [gatsby-plugin-facebook-pixel](https://www.gatsbyjs.org/packages/gatsby-plugin-facebook-pixel)
 * [gatsby-plugin-favicon](https://github.com/Creatiwity/gatsby-plugin-favicon)
 
-[View Demo] (https://gatsby-strapi-starter.netlify.com/)
+[View Demo](https://gatsby-strapi-starter.netlify.com/)
 
 ## 🚀 Quick start
 
