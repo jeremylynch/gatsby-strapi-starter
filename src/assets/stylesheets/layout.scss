@@ -38,16 +38,14 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+.bg-primary-faded {
+  color: $primary;
+  background-color: rgba(red($primary), green($primary), blue($primary), 0.2);
+}
+
 .btn.btn-primary {
   background: $gradient;
   border: 0;
-}
-
-.slider {
-  background: $gradient;
-  color: white;
-  padding: 10rem 0;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 footer {

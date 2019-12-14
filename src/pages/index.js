@@ -22,9 +22,7 @@ let Service = ({title, Icon = FaHome}) => (
 export default () => (
   <Layout>
     <SEO title="Home" />
-    <div className="slider">
-      <Slider/>
-    </div>
+    <Slider/>
     <Container className="py-5">
       <h2 className="text-center mb-4">Services</h2>
       <Row>

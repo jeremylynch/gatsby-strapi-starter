@@ -4,12 +4,21 @@ import Link from '../components/link'
 import Layout from '../components/layout'
 import ContactForm from '../components/form'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa'
+import Styled from 'styled-components'
+
+let Cirle = Styled.div`
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 let ContactItem = ({text, type, Icon, href}) => (
   <Col xs={6} lg={3} className="d-flex flex-column align-items-center" style={{wordBreak: 'break-word'}}>
-    <div className="h-4-rem w-4-rem bg-primary-faded my-3 absolute-center rounded-circle">
+    <Cirle className="h-4-rem w-4-rem bg-primary-faded my-3 absolute-center rounded-circle">
       <Icon size={30}/>
-    </div>
+    </Cirle>
     <div className="text-center">
       <h6>{type}</h6>
       <span className="text-secondary">

@@ -1,6 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
+const SliderContainer = styled.div`
+  background: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
+  color: white;
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+`
 
 export default () => {
   var settings = {
@@ -23,25 +31,27 @@ export default () => {
 
   let {title, author} = sideMetadata.site.siteMetadata
   return (
-    <Slider {...settings}>
-      <div>
-        <div className="text-center">
-          <h1>{title}</h1>
-          <p>By {author}</p>
+    <SliderContainer>
+      <Slider {...settings}>
+        <div>
+          <div className="text-center">
+            <h1>{title}</h1>
+            <p>By {author}</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div className="text-center">
-          <h1>{title}</h1>
-          <p>By {author}</p>
+        <div>
+          <div className="text-center">
+            <h1>{title}</h1>
+            <p>By {author}</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div className="text-center">
-          <h1>{title}</h1>
-          <p>By {author}</p>
+        <div>
+          <div className="text-center">
+            <h1>{title}</h1>
+            <p>By {author}</p>
+          </div>
         </div>
-      </div>
-    </Slider>
+      </Slider>
+    </SliderContainer>
   )
 }
