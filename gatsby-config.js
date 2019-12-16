@@ -6,7 +6,12 @@ module.exports = {
     title: `Gatsby Bootstrap Strapi Starter`,
     description: `Gatsby + Strapi = <3`,
     author: `Jeremy Lynch`,
-    siteUrl: `https://gatsby-strapi-starter.netlify.com/`
+    siteUrl: `https://gatsby-strapi-starter.netlify.com/`,
+    phone: '12345',
+    fax: '12345',
+    address: '123 fake street',
+    email: 'contact@test.com'
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

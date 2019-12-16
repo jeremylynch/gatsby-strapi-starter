@@ -7,6 +7,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa'
 import Styled from 'styled-components'
 import Hr from '../components/hr'
 import PageTitle from '../components/page-title'
+import { graphql } from 'gatsby'
 
 let Cirle = Styled.div`
   height: 4rem;
@@ -30,15 +31,15 @@ let ContactItem = ({text, type, Icon, href}) => (
   </Col>
 )
 
-export default () => (
+export default ({data}) => (
   <Layout>
     <PageTitle title="Contact Us"/>
     <Container>
       <Row className="py-5">
-        <ContactItem text={"123 Fake Street"} type="Address" Icon={FaMapMarkerAlt}/>
-        <ContactItem text={"test@test.com"} href={`mailto:test@test.com`} type="Email" Icon={FaEnvelope}/>
-        <ContactItem text={"12345"} href={`tel:12345`} type="Phone" Icon={FaPhone}/>
-        <ContactItem text={"12345"} type="Fax" Icon={FaFax}/>
+        <ContactItem text={data.site.siteMetadata.address} type="Address" Icon={FaMapMarkerAlt}/>
+        <ContactItem text={data.site.siteMetadata.email} href={`mailto:test@test.com`} type="Email" Icon={FaEnvelope}/>
+        <ContactItem text={data.site.siteMetadata.phone} href={`tel:12345`} type="Phone" Icon={FaPhone}/>
+        <ContactItem text={data.site.siteMetadata.fax} type="Fax" Icon={FaFax}/>
       </Row>
       <hr/>
       <Row className="py-5">
@@ -51,3 +52,16 @@ export default () => (
     </Container>
   </Layout>
 )
+
+export const query = graphql`
+  query Contact {
+    site {
+      siteMetadata {
+        address
+        email
+        phone
+        fax
+      }
+    }
+  }
+`
