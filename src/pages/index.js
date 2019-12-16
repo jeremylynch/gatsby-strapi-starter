@@ -41,8 +41,10 @@ export default () => (
       <Container>
         <Row className="d-flex justify-content-center">
           <Col md={8}>
-            <h3 className="text-center">Reactstrap Form Fields</h3>
-            <Form/>
+            <Box style={{textAlign: 'left'}}>
+              <h3 className="text-center">Reactstrap Form Fields</h3>
+              <Form/>
+            </Box>
           </Col>
         </Row>
       </Container>

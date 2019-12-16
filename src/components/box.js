@@ -13,8 +13,8 @@ const Box = styled.div`
   }
 `
 
-export default ({children}) => (
-  <Box>
+export default ({children, ...opts}) => (
+  <Box {...opts}>
     {children}
   </Box>
 )
