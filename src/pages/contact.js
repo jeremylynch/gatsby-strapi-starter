@@ -5,6 +5,8 @@ import Layout from '../components/layout'
 import ContactForm from '../components/form'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFax } from 'react-icons/fa'
 import Styled from 'styled-components'
+import Hr from '../components/hr'
+import PageTitle from '../components/page-title'
 
 let Cirle = Styled.div`
   height: 4rem;
@@ -30,6 +32,7 @@ let ContactItem = ({text, type, Icon, href}) => (
 
 export default () => (
   <Layout>
+    <PageTitle title="Contact Us"/>
     <Container>
       <Row className="py-5">
         <ContactItem text={"123 Fake Street"} type="Address" Icon={FaMapMarkerAlt}/>
@@ -41,7 +44,7 @@ export default () => (
       <Row className="py-5">
         <Col md={6} className="m-auto">
           <h4 className="text-center text-secondary">Message Us</h4>
-          <hr className="rule-short-round rule-primary"/>
+          <Hr/>
           <ContactForm/>
         </Col>
       </Row>

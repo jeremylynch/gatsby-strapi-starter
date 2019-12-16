@@ -8,6 +8,7 @@ import { FaGithub } from 'react-icons/fa'
 import Form from '../components/form'
 import Slider from '../components/slider'
 import Box from '../components/box'
+import Hr from '../components/hr'
 import { FaHome } from 'react-icons/fa';
 
 let Service = ({title, Icon = FaHome}) => (
@@ -43,6 +44,7 @@ export default () => (
           <Col md={8}>
             <Box style={{textAlign: 'left'}}>
               <h3 className="text-center">Reactstrap Form Fields</h3>
+              <Hr/>
               <Form/>
             </Box>
           </Col>
