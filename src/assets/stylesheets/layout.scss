@@ -47,22 +47,3 @@ p {
   background: $gradient;
   border: 0;
 }
-
-footer {
-  a, a:hover {
-    color: inherit;
-  }
-  ul {
-    -webkit-padding-start: 0;
-    padding: 0;
-    & > li {
-      list-style: none;
-      a, a:hover {
-        color: inherit;
-      }
-    }
-    @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-    }
-  }
-}
