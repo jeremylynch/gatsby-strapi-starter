@@ -48,6 +48,7 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/HKGrotesk-Bold.woff2') format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -55,6 +56,7 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
   font-style: normal;
   font-weight: 500;
   src: url('../fonts/HKGrotesk-ExtraBold.woff2') format("woff2");
+  font-display: swap;
 }
 
 body {
