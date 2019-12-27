@@ -9,9 +9,9 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/images";
-@import "node_modules/bootstrap/scss/code";
+//@import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/tables";
+//@import "node_modules/bootstrap/scss/tables";
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/transitions";
@@ -71,6 +71,9 @@ h1 {
 
 p {
   font-family: 'Roboto', sans-serif;
+  .text-muted {
+    color: #869ab8;
+  }
 }
 
 .bg-primary-faded {
