@@ -1,6 +1,6 @@
 import React from 'react'
 import {NormalField} from 'reactstrap-form-fields'
-import { Button } from 'reactstrap'
+import Button from './btn'
 
 export default () => (
   <form>
