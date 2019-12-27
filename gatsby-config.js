@@ -63,6 +63,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-styled-components`
   ],
 }
