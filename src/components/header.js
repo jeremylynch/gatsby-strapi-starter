@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Container,
   Collapse,
   Navbar,
   NavbarToggler
@@ -7,6 +8,7 @@ import {
 import Link from './link'
 import Navigation from 'reactstrap-json-nav'
 import navigation from '../data/navigation';
+import logo from '../assets/images/logo.svg'
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +17,15 @@ const Header = (props) => {
 
   return (
     <Navbar color="light" light expand="md">
-      <Link to="/" className="navbar-brand">{props.siteTitle}</Link>
-      <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
-        <Navigation json={navigation} link={Link}/>
-      </Collapse>
+      <Container>
+        <Link to="/" className="navbar-brand">
+          <img src={logo} alt="Logo" height="25px"/>
+        </Link>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Navigation json={navigation} link={Link}/>
+        </Collapse>
+      </Container>
     </Navbar>
   );
 }
