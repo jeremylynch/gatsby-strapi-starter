@@ -2,6 +2,7 @@ import React from "react"
 
 import { Container, Row, Col } from 'reactstrap'
 import Link from '../components/link'
+import Button from '../components/btn'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FaGithub } from 'react-icons/fa'
@@ -36,10 +37,10 @@ export default () => (
       </Row>
     </Container>
     <div className="text-center py-5">
-      <Link to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
+      <Button to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
         <FaGithub className="mr-1"/>
         View on Github
-      </Link>
+      </Button>
     </div>
     <Benefits/>
     <div className="py-5">

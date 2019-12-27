@@ -80,8 +80,3 @@ p {
   color: $primary;
   background-color: rgba(red($primary), green($primary), blue($primary), 0.2);
 }
-
-.btn.btn-primary {
-  background: $gradient;
-  border: 0;
-}
