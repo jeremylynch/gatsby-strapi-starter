@@ -12,6 +12,11 @@ import Box from '../components/box'
 import Hr from '../components/hr'
 import { FaHome } from 'react-icons/fa';
 import Benefits from '../components/benefits'
+import styled from 'styled-components'
+
+let StyledBackground = styled.div`
+  background: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
+`
 
 let Service = ({title, Icon = FaHome}) => (
   <Col>
@@ -48,19 +53,21 @@ export default () => (
         View on Github
       </Button>
     </div>
-    <Benefits/>
-    <div className="py-5">
-      <Container>
-        <Row className="d-flex justify-content-center">
-          <Col md={8}>
-            <Box style={{textAlign: 'left'}}>
-              <h3 className="text-center">Reactstrap Form Fields</h3>
-              <Hr/>
-              <Form/>
-            </Box>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <StyledBackground>
+      <Benefits/>
+      <div className="py-5">
+        <Container>
+          <Row className="d-flex justify-content-center">
+            <Col md={8}>
+              <Box style={{textAlign: 'left'}}>
+                <h3 className="text-center">Reactstrap Form Fields</h3>
+                <Hr/>
+                <Form/>
+              </Box>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </StyledBackground>
   </Layout>
 )
