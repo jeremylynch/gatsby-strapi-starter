@@ -1,4 +1,5 @@
 [
+  {"name": "Home", "url": "/"},
   {"name": "Contact", "url": "/contact"},
   {"name": "GitHub", "url": "https://github.com/jeremylynch/gatsby-strapi-starter"},
   {"name": "Options", "url": "", "dropdownItems": [

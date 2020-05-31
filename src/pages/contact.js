@@ -31,27 +31,30 @@ let ContactItem = ({text, type, Icon, href}) => (
   </Col>
 )
 
-export default ({data}) => (
-  <Layout>
-    <PageTitle title="Contact Us"/>
-    <Container>
-      <Row className="py-5">
-        <ContactItem text={data.site.siteMetadata.address} type="Address" Icon={FaMapMarkerAlt}/>
-        <ContactItem text={data.site.siteMetadata.email} href={`mailto:test@test.com`} type="Email" Icon={FaEnvelope}/>
-        <ContactItem text={data.site.siteMetadata.phone} href={`tel:12345`} type="Phone" Icon={FaPhone}/>
-        <ContactItem text={data.site.siteMetadata.fax} type="Fax" Icon={FaFax}/>
-      </Row>
-      <hr/>
-      <Row className="py-5">
-        <Col md={6} className="m-auto">
-          <h4 className="text-center text-secondary">Message Us</h4>
-          <Hr/>
-          <ContactForm/>
-        </Col>
-      </Row>
-    </Container>
-  </Layout>
-)
+export default ({data}) => {
+  let {address, email, phone, fax} = data.site.siteMetadata
+  return (
+    <Layout>
+      <PageTitle title="Contact Us"/>
+      <Container>
+        <Row className="py-5">
+          <ContactItem text={address} type="Address" Icon={FaMapMarkerAlt}/>
+          <ContactItem text={email} href={`mailto:${email}`} type="Email" Icon={FaEnvelope}/>
+          <ContactItem text={phone} href={`tel:${phone}`} type="Phone" Icon={FaPhone}/>
+          <ContactItem text={fax} type="Fax" Icon={FaFax}/>
+        </Row>
+        <hr/>
+        <Row className="py-5">
+          <Col md={6} className="m-auto">
+            <h4 className="text-center text-secondary">Message Us</h4>
+            <Hr/>
+            <ContactForm/>
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
+  )
+}
 
 export const query = graphql`
   query Contact {

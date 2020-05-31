@@ -23,7 +23,11 @@ const Header = (props) => {
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Navigation json={navigation} link={Link}/>
+          <Navigation
+            json={navigation}
+            link={Link}
+            activeClassName="active"
+          />
         </Collapse>
       </Container>
     </Navbar>
