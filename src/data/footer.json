@@ -1,0 +1,17 @@
+[
+  {"name": "Features", "url": "", "dropdownItems": [
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"}
+  ]},
+  {"name": "Resources", "url": "", "dropdownItems": [
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"}
+  ]},
+  {"name": "Company", "url": "", "dropdownItems": [
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"},
+    {"name": "Features", "url": "/test"}
+  ]}
+]

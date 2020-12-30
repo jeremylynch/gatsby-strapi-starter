@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'reactstrap'
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import Link from './link';
 import styled from "styled-components"
+import footerItems from '../data/footer.json'
 
 const Footer = styled.footer`
   padding: 3rem 0;
@@ -41,24 +42,16 @@ export default () => (
   <Footer>
     <Container>
       <Row>
-        <Col>
-          <h5>Features</h5>
-          <ul>
-            <FooterLink to="/">Item</FooterLink>
-          </ul>
-        </Col>
-        <Col>
-          <h5>Resources</h5>
-          <ul>
-            <FooterLink to="/">Item</FooterLink>
-          </ul>
-        </Col>
-        <Col>
-          <h5>Company</h5>
-          <ul>
-            <FooterLink to="/">Item</FooterLink>
-          </ul>
-        </Col>
+        {footerItems.map(item => (
+          <Col>
+            <h5>{item.name}</h5>
+            <ul>
+              {item.dropdownItems.map(dropdownItem => (
+                <FooterLink to={dropdownItem.url}>{dropdownItem.name}</FooterLink>
+              ))}
+            </ul>
+          </Col>
+        ))}
         <Col>
           <h5>Contact Us</h5>
           <SocialLink Icon={FaFacebookSquare}/>
