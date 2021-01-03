@@ -15,6 +15,7 @@ import SubFooter from "./subFooter"
 import "../assets/stylesheets/layout.scss"
 import {ThemeProvider} from 'styled-components'
 import theme from '../assets/stylesheets/theme'
+import Banner from './banner'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,17 +23,20 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          phone
+          address
         }
       }
     }
   `)
-
+  let {title, phone, address} = data.site.siteMetadata
   return (
     <ThemeProvider theme={theme}>
-      <Header siteTitle={data.site.siteMetadata.title}/>
+      <Banner title={title} phone={phone} address={address}/>
+      <Header siteTitle={title}/>
       <main>{children}</main>
       <Footer/>
-      <SubFooter title={data.site.siteMetadata.title}/>
+      <SubFooter title={title}/>
     </ThemeProvider>
   )
 }

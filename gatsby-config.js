@@ -4,11 +4,11 @@ let gtm = '1234'
 module.exports = {
   siteMetadata: {
     title: `Gatsby Bootstrap Strapi Starter`,
-    description: `Gatsby + Strapi = <3`,
+    description: `A slightly opinionated Gatsby starter template. `,
     author: `Jeremy Lynch`,
     siteUrl: `https://gatsby-strapi-starter.netlify.com/`,
-    phone: '12345',
-    fax: '12345',
+    phone: '180012345',
+    fax: '180012345',
     address: '123 fake street',
     email: 'contact@test.com'
 
