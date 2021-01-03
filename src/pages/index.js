@@ -5,12 +5,11 @@ import Link from '../components/link'
 import Button from '../components/btn'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaBolt, FaHome, FaWrench } from 'react-icons/fa'
 import Form from '../components/form'
 import Slider from '../components/slider'
 import Box from '../components/box'
 import Hr from '../components/hr'
-import { FaHome } from 'react-icons/fa';
 import Benefits from '../components/benefits'
 import styled from 'styled-components'
 import HomeFeatures from '../components/homeFeatures'
@@ -44,8 +43,8 @@ export default () => (
       <h2 className="text-center mb-4">Services</h2>
       <Row>
         <Service title="Websites"/>
-        <Service title="SEO"/>
-        <Service title="API"/>
+        <Service title="SEO" Icon={FaBolt}/>
+        <Service title="API" Icon={FaWrench}/>
       </Row>
     </Container>
     <div className="text-center py-5">
