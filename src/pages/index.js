@@ -13,6 +13,7 @@ import Hr from '../components/hr'
 import { FaHome } from 'react-icons/fa';
 import Benefits from '../components/benefits'
 import styled from 'styled-components'
+import HomeFeatures from '../components/homeFeatures'
 
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
@@ -69,5 +70,6 @@ export default () => (
         </Container>
       </div>
     </StyledBackground>
+    <HomeFeatures/>
   </Layout>
 )
