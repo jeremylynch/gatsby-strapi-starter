@@ -1,5 +1,5 @@
 let facebook_pixel = ''
-let gtm = ''
+let gtm = '1234'
 
 module.exports = {
   siteMetadata: {
