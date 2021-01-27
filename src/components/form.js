@@ -3,7 +3,7 @@ import {NormalField} from 'reactstrap-form-fields'
 import Button from './btn'
 
 export default () => (
-  <form name="Contact Form" method="POST" netlify>
+  <form name="Contact Form" method="POST" netlify data-netlify="true">
     <input type="hidden" name="form-name" value="Contact Form"/>
     <NormalField name="Full Name"/>
     <NormalField name="Email"/>
