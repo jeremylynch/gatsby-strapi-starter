@@ -28,6 +28,7 @@
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.11.0",
+    "react-is": "^17.0.1",
     "react-slick": "^0.28.0",
     "reactstrap": "^8.8.1",
     "reactstrap-form-fields": "^1.0.8",
