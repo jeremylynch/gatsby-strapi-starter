@@ -2,10 +2,11 @@ import React from 'react'
 import { Container } from 'reactstrap'
 import { HeaderItem, IconLink } from './bannerHelper'
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+const NumberFormat = require('react-number-format');
 
 let Banner = ({
   title,
-  phone = '123',
+  phone,
   facebook_url = null,
   instagram_url = null,
   address
@@ -20,7 +21,8 @@ let Banner = ({
               {title}
             </span>
             <HeaderItem
-              phone={phone}
+              text={phone}
+              type="phone"
               Icon={FaPhone}
               url={phone_url}
               klass="d-sm-none"
@@ -28,13 +30,15 @@ let Banner = ({
           </div>
           <div className="d-flex">
             <HeaderItem
-              phone={address}
+              text={address}
+              type="address"
               Icon={FaMapMarkerAlt}
               url="/contact"
               klass="d-lg-flex d-none mr-3"
             />
             <HeaderItem
-              phone={phone}
+              text={phone}
+              type="phone"
               Icon={FaPhone}
               url={phone_url}
               klass="d-sm-flex d-none mr-3"

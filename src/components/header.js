@@ -9,6 +9,13 @@ import Link from './link'
 import Navigation from 'reactstrap-json-nav'
 import navigation from '../data/navigation';
 import logo from '../assets/images/logo.svg'
+import styled from 'styled-components'
+
+let StyledNavbar = styled(props => <Navbar {...props}/>)`
+  position: sticky;
+  top: 0;
+  z-index: 10;
+`
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +23,7 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md">
+    <StyledNavbar color="light" light expand="md">
       <Container>
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="Logo" height="25px"/>
@@ -30,7 +37,7 @@ const Header = (props) => {
           />
         </Collapse>
       </Container>
-    </Navbar>
+    </StyledNavbar>
   );
 }
 
