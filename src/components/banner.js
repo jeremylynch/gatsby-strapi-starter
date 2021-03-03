@@ -3,7 +3,13 @@ import { Container } from 'reactstrap'
 import { HeaderItem, IconLink } from './bannerHelper'
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
-let Banner = ({title, phone = '123', facebook_url = null, instagram_url = null, address}) => {
+let Banner = ({
+  title,
+  phone = '123',
+  facebook_url = null,
+  instagram_url = null,
+  address
+}) => {
   const phone_url = 'tel:' + phone.replace(/ /g, '')
   return (
     <div className="bg-light">

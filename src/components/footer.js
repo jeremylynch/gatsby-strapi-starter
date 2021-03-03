@@ -43,7 +43,7 @@ let Footer = () => (
     <Container>
       <Row>
         {footerItems.map(item => (
-          <Col>
+          <Col xs={12} md={3}>
             <h5>{item.name}</h5>
             <ul>
               {item.dropdownItems.map(dropdownItem => (
@@ -52,7 +52,7 @@ let Footer = () => (
             </ul>
           </Col>
         ))}
-        <Col>
+        <Col xs={12} md={3}>
           <h5>Contact Us</h5>
           <SocialLink Icon={FaFacebookSquare}/>
           <SocialLink Icon={FaInstagram}/>

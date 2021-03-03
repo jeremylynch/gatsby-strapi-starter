@@ -1,5 +1,13 @@
 import React from 'react'
 import Link from './link'
+import styled from 'styled-components'
+
+let StyledLink = styled(props => <Link {...props}/>)`
+  color: black;
+  &:hover {
+    color: black;
+  }
+`
 
 const HeaderItem = ({ phone, title, Icon, url, klass }) => (
   <div className={klass + ' align-items-center flex mr-3'}>
@@ -7,9 +15,9 @@ const HeaderItem = ({ phone, title, Icon, url, klass }) => (
     <span>
       {title ? title + ': ' : ''}
       {url ? (
-        <Link href={url} className="unstyled">
+        <StyledLink href={url}>
           {phone}
-        </Link>
+        </StyledLink>
       ) : (
         phone
       )}
@@ -18,7 +26,7 @@ const HeaderItem = ({ phone, title, Icon, url, klass }) => (
 )
 
 const IconLink = ({ href, Icon }) => (
-  <Link to={href} className="flex items-center unstyled">
+  <Link to={href} className="flex items-center">
     <Icon size='1.2em' className="mr-2"/>
   </Link>
 )

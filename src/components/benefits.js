@@ -36,10 +36,11 @@ let Benefits = ({data}) => (
       <Col md="6">
         <div className="mb-4">
           <h2 className="text-primary">Next Generation Websites</h2>
-          <p className="text-muted">Extremely fast. Just try it.</p>
+          <p className="text-muted">Blazing fast. Just try it.</p>
         </div>
         <Benefit title="Styled Components" content="We're using the css-in-js methodology to make this website extremely fast!"/>
         <Benefit title="Gatsby" content="Gatsby offers a huge range of performance enhancements!"/>
+        <Benefit title="Bootstrap/Reactstrap" content="Responsive site built on Bootstrap"/>
       </Col>
       <Col md="6">
         <StyledImg fluid={data.file.childImageSharp.fluid} objectFit="contain" objectPosition="50% 50%"/>

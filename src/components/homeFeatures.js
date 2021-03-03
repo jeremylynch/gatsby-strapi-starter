@@ -13,7 +13,7 @@ let StyledFeature = styled.div`
 `
 
 let Feature = ({title, description, img}) => (
-  <Col md={4}>
+  <Col md={4} className="mb-3">
     <StyledFeature>
       <Img fluid={img}/>
       <div className="p-3">
@@ -48,9 +48,21 @@ let HomeFeatures = () => {
   return (
     <Container className="py-5">
       <Row>
-        <Feature title="Lorem Ipsum" description="testing" img={data.slide1.childImageSharp.fluid}/>
-        <Feature title="Social Media" description="testing" img={data.slide2.childImageSharp.fluid}/>
-        <Feature title="Digital Technology" description="testing" img={data.slide3.childImageSharp.fluid}/>
+        <Feature
+          title="Lorem Ipsum"
+          description="Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis."
+          img={data.slide1.childImageSharp.fluid}
+        />
+        <Feature
+          title="Social Media"
+          description="Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis."
+          img={data.slide2.childImageSharp.fluid}
+        />
+        <Feature
+          title="Digital Technology"
+          description="Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis."
+          img={data.slide3.childImageSharp.fluid}
+        />
       </Row>
     </Container>
   )
