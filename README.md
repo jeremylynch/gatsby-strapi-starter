@@ -19,7 +19,7 @@ A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack in
 * [gatsby-plugin-netlify](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify)
 * [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.org/packages/gatsby-plugin-google-tagmanager/)
 * [gatsby-plugin-facebook-pixel](https://www.gatsbyjs.org/packages/gatsby-plugin-facebook-pixel)
-* [gatsby-plugin-favicon](https://github.com/Creatiwity/gatsby-plugin-favicon)
+* [gatsby-plugin-manifest](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/)
 * [gatsby-plugin-styled-components](https://www.gatsbyjs.org/packages/gatsby-plugin-styled-components/)
 
 [View Demo](https://gatsby-strapi-starter.netlify.com/)
