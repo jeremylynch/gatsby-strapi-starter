@@ -31,7 +31,7 @@ let ContactItem = ({text, type, Icon, href}) => (
   </Col>
 )
 
-export default ({data}) => {
+let Contact = ({data}) => {
   let {address, email, phone, fax} = data.site.siteMetadata
   return (
     <Layout>
@@ -68,3 +68,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Contact

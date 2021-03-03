@@ -29,7 +29,7 @@ let Service = ({title, Icon = FaHome}) => (
   </Col>
 )
 
-export default () => (
+let Index = () => (
   <Layout>
     <SEO title="Home" />
     <Slider/>
@@ -72,3 +72,5 @@ export default () => (
     <HomeFeatures/>
   </Layout>
 )
+
+export default Index

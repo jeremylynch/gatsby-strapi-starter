@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 
-const Box = styled.div`
+const BoxStyling = styled.div`
   border-radius: 0.5rem;
   padding: 2rem;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
@@ -15,8 +15,10 @@ const Box = styled.div`
   }
 `
 
-export default ({children, ...opts}) => (
-  <Box {...opts}>
+let Box = ({children, ...opts}) => (
+  <BoxStyling {...opts}>
     {children}
-  </Box>
+  </BoxStyling>
 )
+
+export default Box

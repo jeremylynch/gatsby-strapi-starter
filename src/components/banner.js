@@ -1,10 +1,9 @@
 import React from 'react'
 import { Container } from 'reactstrap'
 import { HeaderItem, IconLink } from './bannerHelper'
-import styled from 'styled-components'
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
-export default ({title, phone = '123', facebook_url = null, instagram_url = null, address}) => {
+let Banner = ({title, phone = '123', facebook_url = null, instagram_url = null, address}) => {
   const phone_url = 'tel:' + phone.replace(/ /g, '')
   return (
     <div className="bg-light">
@@ -56,3 +55,5 @@ export default ({title, phone = '123', facebook_url = null, instagram_url = null
     </div>
   )
 }
+
+export default Banner

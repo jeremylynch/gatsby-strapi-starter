@@ -2,7 +2,7 @@ import React from 'react'
 import {NormalField} from 'reactstrap-form-fields'
 import Button from './btn'
 
-export default () => (
+let Form = () => (
   <form name="Contact Form" method="POST" netlify data-netlify="true">
     <input type="hidden" name="form-name" value="Contact Form"/>
     <NormalField name="Full Name"/>
@@ -12,3 +12,5 @@ export default () => (
     <Button type="submit">Submit</Button>
   </form>
 )
+
+export default Form

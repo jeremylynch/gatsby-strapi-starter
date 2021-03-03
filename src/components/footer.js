@@ -5,7 +5,7 @@ import Link from './link';
 import styled from "styled-components"
 import footerItems from '../data/footer.json'
 
-const Footer = styled.footer`
+const FooterStyling = styled.footer`
   padding: 3rem 0;
   background: #f8f9fa;
   a, a:hover {
@@ -38,8 +38,8 @@ let FooterLink = ({to, children}) => (
   </li>
 )
 
-export default () => (
-  <Footer>
+let Footer = () => (
+  <FooterStyling>
     <Container>
       <Row>
         {footerItems.map(item => (
@@ -59,5 +59,7 @@ export default () => (
         </Col>
       </Row>
     </Container>
-  </Footer>
+  </FooterStyling>
 )
+
+export default Footer

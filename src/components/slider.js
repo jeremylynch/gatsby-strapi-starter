@@ -13,7 +13,7 @@ const SliderContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 `
 
-export default () => {
+let SlickSlider = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -58,3 +58,5 @@ export default () => {
     </SliderContainer>
   )
 }
+
+export default SlickSlider

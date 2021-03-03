@@ -48,7 +48,7 @@ let Benefits = ({data}) => (
   </Container>
 )
 
-export default () => (
+const BenefitsQuery = () => (
   <StaticQuery
     query={graphql`
       query BenefitsQuery {
@@ -67,3 +67,5 @@ export default () => (
     )}
   />
 )
+
+export default BenefitsQuery

@@ -19,7 +19,7 @@ let Button = styled.div`
   }
 `
 
-export default ({to, children, ...props}) => {
+let Btn = ({to, children, ...props}) => {
   if (to) {
     return (
       <Link to={to}>
@@ -31,3 +31,5 @@ export default ({to, children, ...props}) => {
     <Button as="button" {...props}>{children}</Button>
   )
 }
+
+export default Btn

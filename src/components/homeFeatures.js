@@ -24,7 +24,7 @@ let Feature = ({title, description, img}) => (
   </Col>
 )
 
-export default () => {
+let HomeFeatures = () => {
   const data = useStaticQuery(graphql`
     fragment defaultImage on File {
       childImageSharp {
@@ -55,3 +55,5 @@ export default () => {
     </Container>
   )
 }
+
+export default HomeFeatures

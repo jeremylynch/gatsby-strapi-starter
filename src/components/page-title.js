@@ -9,8 +9,10 @@ const Background = styled.div`
   text-align: center;
 `
 
-export default ({title}) => (
+let PageTitle = ({title}) => (
   <Background>
     <h1>{title}</h1>
   </Background>
 )
+
+export default PageTitle

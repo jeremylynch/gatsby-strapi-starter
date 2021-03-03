@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'reactstrap'
 import Layout from '../components/layout'
 import PageTitle from '../components/page-title'
 
-export default ({title, children}) => (
+let PageTemplate = ({title, children}) => (
   <Layout>
     <PageTitle title={title}/>
     <Container className="py-4">
@@ -15,3 +15,5 @@ export default ({title, children}) => (
     </Container>
   </Layout>
 )
+
+export default PageTemplate
