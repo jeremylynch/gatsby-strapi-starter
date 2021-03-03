@@ -37,10 +37,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: './src/assets/images/gatsby-icon.png'
-      }
+        icon: './src/assets/images/gatsby-icon.png'
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -63,7 +63,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-styled-components`
   ],
 }
