@@ -3,8 +3,8 @@ let gtm = '1234'
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Bootstrap Strapi Starter`,
-    description: `A slightly opinionated Gatsby starter template. `,
+    title: `Gatsby Landing Page Starter`,
+    description: `A slightly opinionated Gatsby Landing Page starter template. `,
     author: `Jeremy Lynch`,
     siteUrl: `https://gatsby-strapi-starter.netlify.com/`,
     phone: '180012345',
@@ -44,22 +44,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     queryLimit: 1000, // Default to 100
-    //     contentTypes: ['article'],
-    //     // Possibility to login with a strapi user, when content types are not publically available (optional).
-    //     loginData: {
-    //       identifier: "",
-    //       password: "",
-    //     },
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify`,

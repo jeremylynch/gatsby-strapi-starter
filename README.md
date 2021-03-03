@@ -5,11 +5,10 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's Strapi Starter
+  Gatsby Landing Page Starter
 </h1>
 
 A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack includes:
-* [Strapi](https://strapi.io/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Reactstrap](https://reactstrap.github.io/)
 * [Reactstrap-form-fields](https://github.com/jeremylynch/reactstrap-form-fields)
