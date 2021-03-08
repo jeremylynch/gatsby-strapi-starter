@@ -2,7 +2,6 @@ import React from 'react'
 import { Container } from 'reactstrap'
 import { HeaderItem, IconLink } from './bannerHelper'
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
-const NumberFormat = require('react-number-format');
 
 let Banner = ({
   title,
