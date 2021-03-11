@@ -43,11 +43,11 @@ let Footer = () => (
     <Container>
       <Row>
         {footerItems.map(item => (
-          <Col xs={12} md={3}>
+          <Col key={item.name} xs={12} md={3}>
             <h5>{item.name}</h5>
             <ul>
               {item.dropdownItems.map(dropdownItem => (
-                <FooterLink to={dropdownItem.url}>{dropdownItem.name}</FooterLink>
+                <FooterLink key={dropdownItem.id} to={dropdownItem.url}>{dropdownItem.name}</FooterLink>
               ))}
             </ul>
           </Col>
