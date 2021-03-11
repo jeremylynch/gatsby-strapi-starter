@@ -28,3 +28,18 @@ A (slightly) opinionated Gatsby Strapi boilerplate to get started fast. Stack in
 ```
 gatsby new gatsby-strapi-website https://github.com/jeremylynch/gatsby-strapi-starter
 ```
+
+# Testing Notes
+This code currently cleanly passes the following checks
+* `npm outdated`
+* `npm audit`
+* `./node_modules/.bin/prettier -c src`
+* `./node_modules/.bin/eslint src`
+* No warnings in JavaScript console, nor logged to terminal
+
+## Exceptions
+* JS console occasionally logs `http://localhost:8000/page-data/test/page-data.json 404 (not found)
+** This likely comes from `node_modules/gatsby/cache-dir/loader.js` or `.../cache-dir/commons/loader.js`
+* Chrome warning: `[Deprecation] SharedArrayBuffer will require cross-origin isolation as of M91`
+** Outside the scope of Gatsby; likely requires a React library upgrade
+* Form submit button requires an implementation in the Contact page
