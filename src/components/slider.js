@@ -1,13 +1,13 @@
-import React from "react";
-import Slider from "react-slick";
+import React from "react"
+import Slider from "react-slick"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import '../../node_modules/slick-carousel/slick/slick.css';
-import '../../node_modules/slick-carousel/slick/slick-theme.css';
+import "../../node_modules/slick-carousel/slick/slick.css"
+import "../../node_modules/slick-carousel/slick/slick-theme.css"
 
 const SliderContainer = styled.div`
-  background: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
+  background: linear-gradient(210deg, #943cff 0%, #dd45d3 40.13%, #fc9a57 90%);
   color: white;
   padding: 10rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
@@ -19,8 +19,8 @@ let SlickSlider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
-  };
+    slidesToScroll: 1,
+  }
   const sideMetadata = useStaticQuery(graphql`
     query TitleQuery {
       site {
@@ -32,7 +32,7 @@ let SlickSlider = () => {
     }
   `)
 
-  let {title, author} = sideMetadata.site.siteMetadata
+  let { title, author } = sideMetadata.site.siteMetadata
   return (
     <SliderContainer>
       <Slider {...settings}>
