@@ -1,24 +1,27 @@
-import React from 'react'
-import { Container } from 'reactstrap'
-import { HeaderItem, IconLink } from './bannerHelper'
-import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import React from "react"
+import { Container } from "reactstrap"
+import { HeaderItem, IconLink } from "./bannerHelper"
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaMapMarkerAlt,
+  FaPhone,
+} from "react-icons/fa"
 
 let Banner = ({
   title,
   phone,
   facebook_url = null,
   instagram_url = null,
-  address
+  address,
 }) => {
-  const phone_url = 'tel:' + phone.replace(/ /g, '')
+  const phone_url = "tel:" + phone.replace(/ /g, "")
   return (
     <div className="bg-light">
       <Container>
         <div className="d-flex py-2 align-items-center">
           <div className="d-flex mr-auto">
-            <span className="d-none d-sm-inline font-weight-bold">
-              {title}
-            </span>
+            <span className="d-none d-sm-inline font-weight-bold">{title}</span>
             <HeaderItem
               text={phone}
               type="phone"
@@ -43,20 +46,14 @@ let Banner = ({
               klass="d-sm-flex d-none mr-3"
             />
             {facebook_url ? (
-              <IconLink
-                href={facebook_url}
-                Icon={FaFacebookF}
-              />
+              <IconLink href={facebook_url} Icon={FaFacebookF} />
             ) : (
-              ''
+              ""
             )}
             {instagram_url ? (
-              <IconLink
-                href={instagram_url}
-                Icon={FaInstagram}
-              />
+              <IconLink href={instagram_url} Icon={FaInstagram} />
             ) : (
-              ''
+              ""
             )}
           </div>
         </div>
