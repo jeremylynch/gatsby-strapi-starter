@@ -1,11 +1,18 @@
 [
-  {"name": "Home", "url": "/"},
-  {"name": "About", "url": "/about"},
-  {"name": "Options", "url": "", "dropdownItems": [
-    {"name": "Option 1", "url": "/test"},
-    {"name": "Option 2", "url": "/test"},
-    {"name": "Reset", "url": "/test"}
-  ]},
-  {"name": "GitHub", "url": "https://github.com/jeremylynch/gatsby-strapi-starter"},
-  {"name": "Contact", "url": "/contact"}
+  { "name": "Home", "url": "/" },
+  { "name": "About", "url": "/about" },
+  {
+    "name": "Options",
+    "url": "",
+    "dropdownItems": [
+      { "name": "Option 1", "url": "/test" },
+      { "name": "Option 2", "url": "/test" },
+      { "name": "Reset", "url": "/test" }
+    ]
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/jeremylynch/gatsby-strapi-starter"
+  },
+  { "name": "Contact", "url": "/contact" }
 ]
