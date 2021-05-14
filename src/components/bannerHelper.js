@@ -16,7 +16,7 @@ const HeaderItem = ({text, title, Icon, url, klass, type}) => (
     <span>
       {title ? title + ': ' : ''}
       {url ? (
-        <StyledLink href={url}>
+        <StyledLink to={url}>
           {type === 'address' ? text : <NumberFormat value={text} displayType={'text'} format="#### ### ###"/>}
         </StyledLink>
       ) : (
