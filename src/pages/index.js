@@ -13,6 +13,7 @@ import Hr from "../components/hr"
 import Benefits from "../components/benefits"
 import styled from "styled-components"
 import HomeFeatures from "../components/homeFeatures"
+import Testimonials from '../components/testimonials'
 
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom, #f9fbfd 0, #fff 100%);
@@ -75,6 +76,7 @@ let Index = () => (
       </div>
     </StyledBackground>
     <HomeFeatures />
+    <Testimonials/>
   </Layout>
 )
 

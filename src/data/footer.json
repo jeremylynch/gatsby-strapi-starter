@@ -12,9 +12,9 @@
     "name": "Services",
     "url": "",
     "dropdownItems": [
-      { "id": 0, "name": "Features", "url": "/test" },
-      { "id": 1, "name": "Features", "url": "/test" },
-      { "id": 2, "name": "Features", "url": "/test" }
+      { "id": 0, "name": "Blog", "url": "/test" },
+      { "id": 1, "name": "Activity", "url": "/test" },
+      { "id": 2, "name": "My Account", "url": "/test" }
     ]
   },
   {
@@ -22,8 +22,8 @@
     "url": "",
     "dropdownItems": [
       { "id": 0, "name": "Features", "url": "/test" },
-      { "id": 1, "name": "Features", "url": "/test" },
-      { "id": 2, "name": "Features", "url": "/test" }
+      { "id": 1, "name": "Privacy Policy", "url": "/test" },
+      { "id": 2, "name": "Help", "url": "/test" }
     ]
   }
 ]
