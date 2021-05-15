@@ -3,7 +3,7 @@ import { Container, Collapse, Navbar, NavbarToggler } from "reactstrap"
 import Link from "./link"
 import Navigation from "reactstrap-json-nav"
 import navigation from "../data/navigation"
-import logo from "../assets/images/logo.svg"
+import Logo from "../assets/images/logo"
 import styled from "styled-components"
 
 let StyledNavbar = styled((props) => <Navbar {...props} />)`
@@ -21,7 +21,7 @@ const Header = (props) => {
     <StyledNavbar color="light" light expand="md">
       <Container>
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="Logo" height="25px" />
+          <Logo/>
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
