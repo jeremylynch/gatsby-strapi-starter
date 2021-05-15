@@ -8,6 +8,7 @@ import Styled from "styled-components"
 import Hr from "../components/hr"
 import PageTitle from "../components/page-title"
 import { graphql } from "gatsby"
+import NumberFormat from 'react-number-format'
 
 let Cirle = Styled.div`
   height: 4rem;
@@ -17,7 +18,7 @@ let Cirle = Styled.div`
   justify-content: center;
 `
 
-let ContactItem = ({ text, type, Icon, href }) => (
+let ContactItem = ({ text, type, Icon, href, children }) => (
   <Col
     xs={6}
     lg={3}
@@ -32,10 +33,10 @@ let ContactItem = ({ text, type, Icon, href }) => (
       <span className="text-secondary">
         {href ? (
           <Link to={href} className="reset">
-            {text}
+            {children ? children : text}
           </Link>
         ) : (
-          text
+          children ? children : text
         )}
       </span>
     </div>
@@ -61,8 +62,12 @@ let Contact = ({ data }) => {
             href={`tel:${phone}`}
             type="Phone"
             Icon={FaPhone}
-          />
-          <ContactItem text={fax} type="Fax" Icon={FaFax} />
+          >
+            <NumberFormat value={phone} displayType={'text'} format="#### ### ###"/>
+          </ContactItem>
+          <ContactItem text={fax} type="Fax" Icon={FaFax}>
+            <NumberFormat value={phone} displayType={'text'} format="#### ### ###"/>
+          </ContactItem>
         </Row>
         <hr />
         <Row className="py-5">

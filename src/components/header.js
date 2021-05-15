@@ -27,8 +27,8 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Navigation
             json={navigation}
-            link={Link.to}
-            activeclassname="active"
+            link={Link}
+            activeClassName="active"
           />
         </Collapse>
       </Container>
