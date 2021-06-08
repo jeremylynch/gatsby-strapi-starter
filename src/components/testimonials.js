@@ -21,8 +21,15 @@ let Testimonial = ({stars = 5, content}) => (
 export default () => (
   <Background>
     <Container className="py-5">
-      <h3 className="text-center mb-5">Testimonials</h3>
-      <Row>
+      <h2 className="text-center">Client Testimonials</h2>
+      <Row className="d-flex justify-content-center">
+        <Col md="7">
+          <p className="text-center text-secondary">
+            We've been the leading <u>website</u> and <u>marketing</u> provider in Australia for more than two decades. Here’s what our clients say.
+          </p>
+        </Col>
+      </Row>
+      <Row className="mt-4">
         <Testimonial content="Fastly provides development teams an open source frontend framework for creating rich, optimized websites and a cloud platform for delivering them on a blazing fast edge network."/>
         <Testimonial content="Fastly is blazing fast for browsing the web! I highly recommend this product for creating your next static website."/>
         <Testimonial content="Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit."/>
