@@ -47,6 +47,7 @@ module.exports = {
     "gatsby-plugin-robots-txt",
     `gatsby-plugin-netlify`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-preact`
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-image`,
   ],
 }
