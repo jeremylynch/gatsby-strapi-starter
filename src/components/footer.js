@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 import Link from "./link"

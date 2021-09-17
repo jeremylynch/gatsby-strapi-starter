@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Container, Col, Row } from "reactstrap"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"

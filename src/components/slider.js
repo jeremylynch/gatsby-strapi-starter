@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import Slider from "react-slick"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"

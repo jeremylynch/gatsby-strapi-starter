@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { FaCode } from "react-icons/fa"
 import { StaticQuery, graphql } from "gatsby"

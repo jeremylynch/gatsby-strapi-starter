@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import { Container, Row, Col } from "reactstrap"
 import Link from "../components/link"
@@ -13,7 +13,7 @@ import Hr from "../components/hr"
 import Benefits from "../components/benefits"
 import styled from "styled-components"
 import HomeFeatures from "../components/homeFeatures"
-import Testimonials from '../components/testimonials'
+import Testimonials from "../components/testimonials"
 
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom, #f9fbfd 0, #fff 100%);
@@ -76,7 +76,7 @@ let Index = () => (
       </div>
     </StyledBackground>
     <HomeFeatures />
-    <Testimonials/>
+    <Testimonials />
   </Layout>
 )
 
