@@ -4,25 +4,48 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "1.0.0",
   "author": "Jeremy Lynch",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "eslint src",
+    "reformat": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "bootstrap": "^4.5.3",
-    "gatsby": "alpha-9689ff",
+    "gatsby": "^4.0.0-zz-next.2",
     "gatsby-plugin-facebook-pixel": "^1.0.5",
-    "gatsby-plugin-google-tagmanager": "alpha-9689ff",
-    "gatsby-plugin-image": "alpha-9689ff",
-    "gatsby-plugin-manifest": "alpha-9689ff",
-    "gatsby-plugin-netlify": "alpha-9689ff",
-    "gatsby-plugin-offline": "alpha-9689ff",
-    "gatsby-plugin-preact": "alpha-9689ff",
-    "gatsby-plugin-react-helmet": "alpha-9689ff",
+    "gatsby-plugin-google-tagmanager": "^4.0.0-zz-next.2",
+    "gatsby-plugin-image": "^2.0.0-zz-next.2",
+    "gatsby-plugin-manifest": "^4.0.0-zz-next.2",
+    "gatsby-plugin-netlify": "^4.0.0-next.0",
+    "gatsby-plugin-offline": "^5.0.0-zz-next.2",
+    "gatsby-plugin-preact": "^6.0.0-zz-next.1",
+    "gatsby-plugin-react-helmet": "^5.0.0-zz-next.1",
     "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-sass": "alpha-9689ff",
-    "gatsby-plugin-sharp": "alpha-9689ff",
-    "gatsby-plugin-sitemap": "alpha-9689ff",
-    "gatsby-plugin-styled-components": "alpha-9689ff",
-    "gatsby-source-filesystem": "alpha-9689ff",
-    "gatsby-transformer-sharp": "alpha-9689ff",
+    "gatsby-plugin-sass": "^5.0.0-zz-next.2",
+    "gatsby-plugin-sharp": "^4.0.0-zz-next.2",
+    "gatsby-plugin-sitemap": "^5.0.0-zz-next.2",
+    "gatsby-plugin-styled-components": "^5.0.0-zz-next.1",
+    "gatsby-source-filesystem": "^4.0.0-zz-next.2",
+    "gatsby-transformer-sharp": "^4.0.0-zz-next.1",
     "node-sass": "^5.0.0",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
@@ -46,28 +69,5 @@
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1",
     "prettier-eslint": "^12.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "lint": "eslint src",
-    "reformat": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "engines": {
-    "node": ">=12.13.0"
   }
 }
