@@ -2,10 +2,10 @@ import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { FaCode } from "react-icons/fa"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image/withIEPolyfill"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
-let StyledImg = styled((props) => <Img {...props} />)`
+let StyledImg = styled((props) => <GatsbyImage {...props} />)`
   perspective: 1500px;
   perspective-origin: left center;
   overflow: visible !important;
@@ -55,7 +55,7 @@ let Benefits = ({ data }) => (
       </Col>
       <Col md="6">
         <StyledImg
-          fluid={data.file.childImageSharp.fluid}
+          image={data.file.childImageSharp.gatsbyImageData}
           objectFit="contain"
           objectPosition="50% 50%"
         />
@@ -71,9 +71,7 @@ const BenefitsQuery = () => (
         file(relativePath: { eq: "sample.png" }) {
           id
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
